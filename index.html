@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEWS</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./image/icons8-news-16.png"
+      type="image/x-icon"
+    />
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/1e61186321.js" crossorigin="anonymous"></script>
+     <!-- google fonts link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+       rel="stylesheet"
+     />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Nav-bar -->
+    <header>
+      <section class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><span class="fw-semibold bg-primary text-white py-2 px-2 rounded-end me-1">Epoch</span> <span class="">Daily</span></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"
+                    >NEWS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="blog.html">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <img
+                    class="user-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQduQVCwYIWiMn6dpaBakR8t3aPuiz3tajpw&usqp=CAU"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container"><hr /></div>
+      </section>
+    </header>
+    <main class="container">
+      <!-- categories list -->
+      <section class="mb-5">
+        <nav id="navbar-example2" class=" bg-light px-3 mb-3">
+          <ul id="navbar-news" class="nav nav-pills nav-fill">
+            <!-- <li class="nav-item">
+              <a class="nav-link text-secondary fs-5" aria-current="page" href="#">Home</a>
+            </li> -->
+          </ul>
+        </nav>
+        
+      </section>
+      <!-- categories list end-->
+        <!-- loader spinner -->
+        <section id="loader" class="d-none">
+          <div style="height:400px ;" class="d-flex justify-content-center align-items-center">
+              <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading....</span>
+              </div>
+          </div>
+      </section>
+        <!-- loader spinner end-->
+        <!-- found section -->
+        <section class="my-5">
+          <div id="total-found">
+            <span id="news-items-count" class="text-danger fs-4">0</span>
+          </div>
+        </section>
+        <!-- found section end -->
+        <!-- radio button section -->
+      <section>
+        <div class="d-flex justify-content-between">
+          <div>
+            <label for=""> Sort-by-View
+                <select name="" id="">
+                    <option value="">Defaults</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <button class="btn btn-primary">Todays cost</button>
+            <button class="btn btn-outline-primary">Trends</button>
+        </div>
+          </div>
+          
+        </div>
+      </section>
+      <!-- radio button section END -->
+
+      <!-- category container -->
+      <section id="category-container" class="">
+        
+        <!-- <div class="card mb-3 container mt-5 ">
+          
+             <div class="row g-0">
+            <div class="col-md-4">
+              <img src="" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div> 
+        </div> -->
+      </section>
+      <!-- category container end -->
+
+
+      <!-- details news -->
+      <!-- Modal Contents -->
+      <section>
+        <!-- Modal -->
+        <div
+      class="modal fade"
+      id="newsDetailsModal"
+      tabindex="-1"
+      aria-labelledby="newsDetailsModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsDetailsModalLabel">
+              Modal title
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="news-details" class="modal-body">
+            
+          
+        </div>
+        <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close 
+            </button>
+          </div>
+      </div>
+    </div>
+    </section>
+    </main>
+    <!-- Footer  -->
+ <section class="mt-5 pt-5 container">
+  <footer class="text-center bg-dark text-white px-5 py-5">Copyright &copy; All Right Reserved By Syeda Nafisa Akter </footer>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./news.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+

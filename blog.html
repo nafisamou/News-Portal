@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./image/icons8-blog-16.png"
+      type="image/x-icon"
+    />
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/1e61186321.js" crossorigin="anonymous"></script>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <!-- css link -->
+     <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+</head>
+<body class="container"> 
+    <header>
+        <section class="container">
+          <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"
+                ><span class="fw-semibold bg-primary text-white py-2 px-2 rounded-end me-1">Epoch</span> <span class="">Daily</span></a
+            >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"
+                      >NEWS</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="blog.html">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                    <img
+                      class="user-img"
+                      src="./image/istockphoto-991002050-612x612.jpg"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container"><hr /></div>
+        </section>
+      </header>
+    <main class=" container mt-5">
+        <h1 class="text-bg-primary rounded-5 mb-5 px-1 py-3 fw-semibold text-center">Welcome to Our Blog Web</h1>
+         <!-- Q/A section -->
+         <section class="container mt-5">
+            <div>
+                <h1 class="text-center fs-1 fw-1 text-primary rounded-3">Blog Section ❓</h1>
+            </div>
+            <div class="accordion my-5" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Difference Between Var, Let, Const
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div>
+                        <h1>Var</h1>
+                        <p>Earlier only var is there and he is the king of variable declarations. But there are some issues associated with variables declared with var, though. That is why let and const introduced.
+
+                            Var declarations are globally scoped or function scoped. That means if a variable is declared with var outside a function then it is in the global scope(accessible anywhere). Otherwise, if they are inside a function we can only access them inside the function.</p>
+                      </div>
+                      <div>
+                        <h1>Let</h1>
+                        <p>Let
+
+                            Its an enhanced version of var, it solves all the problems that come with the var keyword. Like, let is a block-scoped variable and we cannot re-declared but can be updated(re-assigned).</p>
+                      </div>
+                      <div>
+                        <h1>Const</h1>
+                        <p>Const declarations share some similarities with let declarations, but const variables cannot be updated or re-declared. It maintains the constant values.
+                            Unlike var and let, if we are using const then it must be initialized at the same time when we declared the variable.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     Difference Between Arrow Funtion And Regular Function
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <h1>Regular Function</h1>
+                      <p>Define your functions in many ways.
+
+                        One way is using function keyword:</p>
+                        <img class="img-fluid" src="image/RegularFunction.JPG" alt="" srcset="">
+                        <h1>Arrow Function</h1>
+                        
+                        <p>You can call both function declaration and expression as Normal/Regular Function
+                            <br>
+                            Arrow function is introduced in ES6 and also known as fat arrow function.</p>
+                            <img class="img-fluid"  src="image/ArrayFunction.JPG" alt="" srcset="">
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Difference Between Map, forEach, filter,find
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <h1>.forEach</h1>
+                      <p>.forEach(), is used to execute the same code on every element in an array but does not change the array and it returns undefined.
+                        <br>
+                        Example:
+                        In the example below we would use .forEach() to iterate over an array of food and log that we would want to eat each of them.</p>
+                        <img class="img-fluid" src="image/forEach.JPG" alt="" srcset="">
+                      
+                      <h1>.map()</h1>
+                      <p>.map() executes the same code on every element in an array and returns a new array with the updated elements.
+                        <br>
+                        Example:
+                        In the example below we would use .map to iterate over the elements of the cost array and divide each element by 10, then assign our new array containing the new cost to the variable newCost.</p>
+                        <img class="img-fluid" src="image/map.JPG" alt="" srcset="">
+                      <h1>.filter()</h1>
+                      <p>.filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.
+                        <br>
+                        Example:
+                        In the example below we would use .filter to return values that are less than 200.</p>
+                        <img class="img-fluid" src="image/filter.JPG" alt="" srcset="">
+                      <h1>.find()</h1>
+                      <p>Function .find() is also a search function like the previous but they differ in one small detail — this function returns only one match in an array. If in an array is more than one result, the function will return the first that has matched.
+
+                        Just like the function .forEach(), this function also takes only 1 parameter .find(callback). The parameter callback can take up to 3 parameters element, index & array (but only the element parameter is required, the rest is optional).
+                        <br><br>
+                        Example
+                        <br>
+                        Here is an example of searching by more advanced terms in an array of objects and finding an object with a property name that is equal to John Doe:</p>
+                        <img class="img-fluid" src="image/find.JPG" alt="" srcset="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section>
+           <div class=" rounded-5  p-5 bg">
+            <h2>1. What's the difference between let & const?</h2>
+            <p class="fs-4 ms-4">
+                <strong>Here is the differences :</strong>
+            <ul class="fs-5">
+                <li> let can be updated but not re-declared.
+                </li>
+                <li>
+                const can not be updated and re-declared.
+                </li>
+            </ul>
+            </p>
+           </div>
+        </section>
+        <section>
+           <div class="bg rounded-5  p-5 mt-5">
+            <h2> 2. What's the difference between Regular Function & Arrow Function?</h2>
+            <p class="fs-4 ms-4"><strong>Here is the differences :</strong>
+                <ul class="fs-5">
+                    <li> Regular functions have their own 'this'. Arrow functions don't have their own 'this'.
+                    </li>
+                    <li> We can have duplicate parameters in regular functions. We can't have duplicate parameters in arrow functions.
+                    </li>
+                </ul>
+            </p>
+           </div>
+        </section>
+        <section>
+           <div class="bg rounded-5  p-5 mt-5">
+            <h2> 3. What are the differences among forEach, map, filter, find?</h2>
+            <p class="fs-4 ms-4">
+                <strong>Here is the differences :</strong> 
+            <ul class="fs-5">
+                <li>Foreach takes a callback function and run that callback function on each element of array one by one.
+                    <li>Function .map() is a manipulative function that can modify each element's content in an array that it is called on. This function returns a new array with modified values, the array that it is called on will stay still</li>
+                    <li>3.filter does not update the existing array it will return a new filtered array every time.</li>
+                     <li>Function .find() is also a search function like the previous but they differ in one small detail — this function returns only one match in an array. If in an array is more than one result, the function will return the first that has matched.</li>
+                    <li> Function .reduce() is an accumulative function that can find a total of all or selected values in an array. This function also is used in both terms, thus supporting object deconstructing</li>
+            </ul>
+            </p>
+           </div>
+        </section>
+        <section>
+           <div class="bg rounded-5  p-5 mt-5">
+            <h2> 4. Why do you use template string?</h2>
+            <p class="fs-4">
+                <strong> I use template string for,</strong>
+             <ul class="fs-5">
+                <li>Template literals are sometimes informally called template strings, because they are used most commonly for string interpolation (to create strings by doing substitution of placeholders). However, a tagged template literal may not result in a string; it can be used with a custom tag function to perform whatever operations you want on the different parts of the template literal.</li>
+             </ul>
+            </p>
+           </div>
+        </section>
+    </main>
+ <!-- Footer  -->
+ <section class="mt-5 pt-5 container">
+    <footer class="text-center bg-dark text-white px-5 py-5">Copyright &copy; All Right Reserved By Syeda Nafisa Akter </footer>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./news.js"></script>
+</body>
+</html>
